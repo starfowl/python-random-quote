@@ -1,5 +1,4 @@
 import random
-import sys
 
 
 def primary():
@@ -22,14 +21,16 @@ def addlines():
     f.write(str0 + "\n")
     f.close()
 
+
 def removeblank():
-    output=""
+    output = ""
     with open("quotes.txt") as d:
         for line in d:
             if not line.isspace():
-                output+=line
-    f = open("quotes.txt", "w")
-    f.write(output)
+                output += line
+    d = open("quotes.txt", "w")
+    d.write(output)
+
 
 if __name__ == "__main__":
     addlines()
